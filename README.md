@@ -1,2 +1,2 @@
 # DistributedFizzBuzz
-For AFC House coding dojo, 21 Nov 2019
+For AFC House Coding Dojo, 21 Nov 2019
