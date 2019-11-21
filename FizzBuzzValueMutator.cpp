@@ -9,9 +9,11 @@
 
 std::string FizzBuzzValueMutator::Mutate(unsigned int value)
 {
-   if (value == 15)
-   {
-       return "FizzBuzz";
-   }
-   return "";
+    const unsigned int FizzBuzzMultiple = 15;
+    std::string output;
+    if (value % FizzBuzzMultiple == 0)
+    {
+        output = "FizzBuzz";
+    }
+    return output;
 }

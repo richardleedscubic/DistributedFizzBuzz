@@ -2,11 +2,34 @@
 #include "FizzBuzzGenerator.h"
 #include "PrinterSpy.h"
 
-TEST(FizzBuzzTests, FifteenOutputsFizzBuzz)
+class FizzBuzzTests : public ::testing::Test
 {
-    PrinterSpy printer;
-    FizzBuzzGenerator fizzBuzzGenerator(printer);
+public:
+    FizzBuzzTests()
+        : fizzBuzzGenerator(printer)
+    {}
 
-    fizzBuzzGenerator.Generate();
+    void SetUp() override
+    {
+        fizzBuzzGenerator.Generate();
+    }
+
+public:
+    PrinterSpy printer;
+    FizzBuzzGenerator fizzBuzzGenerator;
+};
+
+TEST_F(FizzBuzzTests, FifteenOutputsFizzBuzz)
+{
     EXPECT_EQ("FizzBuzz", printer.CallAtIndex(14));
+}
+
+TEST_F(FizzBuzzTests, ThirtyOutputsFizzBuzz)
+{
+    EXPECT_EQ("FizzBuzz", printer.CallAtIndex(29));
+}
+
+TEST_F(FizzBuzzTests, FortyFiveOutputsFizzBuzz)
+{
+    EXPECT_EQ("FizzBuzz", printer.CallAtIndex(44));
 }
