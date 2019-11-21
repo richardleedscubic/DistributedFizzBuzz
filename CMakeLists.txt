@@ -12,6 +12,7 @@ set(SRCS
     FizzBuzzGenerator.h
     FizzBuzzMutatorPriorityListFactory.h
     FizzBuzzValueMutator.h
+    FizzValueMutator.h
     Printer.h
     PrinterSpy.h
     PriorityListValueMutator.h
@@ -23,6 +24,7 @@ set(SRCS
     FizzBuzzTests.cpp
     FizzBuzzValueMutator.cpp
     FizzTests.cpp
+    FizzValueMutator.cpp
     PrinterSpy.cpp
     PriorityListValueMutator.cpp
     UnchangedNumberTests.cpp
