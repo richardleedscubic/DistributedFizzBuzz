@@ -28,6 +28,6 @@ TEST(FizzTests, FifteenOutputsEmptyString) {
 	FizzBuzzGenerator fizzBuzzGenerator(printer);
 
 	fizzBuzzGenerator.Generate();
-	std::string ans = printer.CallAtIndex(15);
-	EXPECT_EQ("", printer.CallAtIndex(15));
+	std::string ans = printer.CallAtIndex(14);
+	EXPECT_EQ("FizzBuzz", printer.CallAtIndex(14));
 }

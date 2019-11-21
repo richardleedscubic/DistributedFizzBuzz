@@ -7,5 +7,6 @@ FizzValueMutator::FizzValueMutator(const std::string& printIdentifier, unsigned 
 
 std::string FizzValueMutator::Mutate(unsigned int value)
 {
-	return ((value + 1) % m_FizzFactor == 0 && !((value + 1) % 15 == 0)) ? m_PrintIdentifier : "";
+	bool div5 = value % 5 == 0;
+	return (value % m_FizzFactor == 0 && !div5) ? m_PrintIdentifier : "";
 }

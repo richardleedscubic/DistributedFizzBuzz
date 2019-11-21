@@ -35,6 +35,7 @@
   <ItemGroup>
     <ClInclude Include="FizzBuzzGenerator.h" />
     <ClInclude Include="FizzBuzzMutatorPriorityListFactory.h" />
+    <ClInclude Include="FizzBuzzValueMutator.h" />
     <ClInclude Include="FizzValueMutator.h" />
     <ClInclude Include="Printer.h" />
     <ClInclude Include="PrinterSpy.h" />
@@ -46,6 +47,7 @@
   <ItemGroup>
     <ClCompile Include="FizzBuzzGenerator.cpp" />
     <ClCompile Include="FizzBuzzMutatorPriorityListFactory.cpp" />
+    <ClCompile Include="FizzBuzzValueMutator.cpp" />
     <ClCompile Include="FizzTests.cpp" />
     <ClCompile Include="FizzValueMutator.cpp" />
     <ClCompile Include="PrinterSpy.cpp" />
