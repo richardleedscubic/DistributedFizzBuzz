@@ -11,3 +11,23 @@ TEST(ThreeOutputsFizz, FizzTests) {
 	std::string ans = printer.CallAtIndex(2);
     EXPECT_EQ("Fizz", printer.CallAtIndex(2));
 }
+
+TEST(FizzTests, NineOutputsFizz) {
+
+	PrinterSpy printer;
+	FizzBuzzGenerator fizzBuzzGenerator(printer);
+
+	fizzBuzzGenerator.Generate();
+	std::string ans = printer.CallAtIndex(8);
+	EXPECT_EQ("Fizz", printer.CallAtIndex(8));
+}
+
+TEST(FizzTests, FifteenOutputsEmptyString) {
+
+	PrinterSpy printer;
+	FizzBuzzGenerator fizzBuzzGenerator(printer);
+
+	fizzBuzzGenerator.Generate();
+	std::string ans = printer.CallAtIndex(15);
+	EXPECT_EQ("", printer.CallAtIndex(15));
+}
