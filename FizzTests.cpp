@@ -8,5 +8,6 @@ TEST(ThreeOutputsFizz, FizzTests) {
     FizzBuzzGenerator fizzBuzzGenerator(printer);
 
     fizzBuzzGenerator.Generate();
+	std::string ans = printer.CallAtIndex(2);
     EXPECT_EQ("Fizz", printer.CallAtIndex(2));
 }

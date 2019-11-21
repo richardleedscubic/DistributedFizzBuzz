@@ -19,13 +19,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{bc7ba533-6f4a-48f2-aaa1-5731ba06752f}</ProjectGuid>
+    <ProjectGuid>{ac302e07-99ab-4e49-ae9b-4e025b3fc8ca}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
     <ConfigurationType>Application</ConfigurationType>
     <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
-    <ProjectName>FizzBuzz</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
@@ -36,20 +35,24 @@
   <ItemGroup>
     <ClInclude Include="FizzBuzzGenerator.h" />
     <ClInclude Include="FizzBuzzMutatorPriorityListFactory.h" />
+    <ClInclude Include="FizzValueMutator.h" />
     <ClInclude Include="Printer.h" />
     <ClInclude Include="PrinterSpy.h" />
     <ClInclude Include="PriorityListValueMutator.h" />
     <ClInclude Include="UnchangedValueMutator.h" />
     <ClInclude Include="ValueMutator.h" />
+    <ClInclude Include="ValueMutatorFactory.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="FizzBuzzGenerator.cpp" />
     <ClCompile Include="FizzBuzzMutatorPriorityListFactory.cpp" />
+    <ClCompile Include="FizzTests.cpp" />
+    <ClCompile Include="FizzValueMutator.cpp" />
+    <ClCompile Include="PrinterSpy.cpp" />
     <ClCompile Include="PriorityListValueMutator.cpp" />
     <ClCompile Include="UnchangedNumberTests.cpp" />
-    <ClCompile Include="FizzBuzzGenerator.cpp" />
-    <ClCompile Include="FizzTests.cpp" />
-    <ClCompile Include="PrinterSpy.cpp" />
     <ClCompile Include="UnchangedValueMutator.cpp" />
+    <ClCompile Include="ValueMutatorFactory.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
