@@ -1,7 +1,7 @@
 #include "gtest/gtest.h"
 #include "FizzBuzzGenerator.h"
 #include "PrinterSpy.h"
-TEST(OneOutputsItself, UnchangedNumberTests) {
+TEST(UnchangedNumberTests, OneOutputsItself) {
   
 	PrinterSpy printer;
 	FizzBuzzGenerator fizzBuzzGenerator(printer);
@@ -10,7 +10,7 @@ TEST(OneOutputsItself, UnchangedNumberTests) {
 	EXPECT_EQ("1", printer.CallAtIndex(0));
 }
 
-TEST(TwoOutputsItself, UnchangedNumberTests) {
+TEST(UnchangedNumberTests, TwoOutputsItself) {
 
     PrinterSpy printer;
     FizzBuzzGenerator fizzBuzzGenerator(printer);

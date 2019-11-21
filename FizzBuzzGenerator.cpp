@@ -7,7 +7,7 @@ void FizzBuzzGenerator::Generate()
 
     std::shared_ptr<ValueMutator> priorityListValueMutator = factory.Create();
 
-    for (int index = 0; index < 100; index++)
+    for (int index = 1; index <= 100; index++)
     {
         printer.Print(priorityListValueMutator->Mutate(index));
     }
