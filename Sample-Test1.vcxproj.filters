@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="FizzBuzzGenerator.cpp" />
+    <ClCompile Include="PrinterSpy.cpp" />
+    <ClCompile Include="FizzTests.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="UnchangedNumberTests.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="FizzBuzzMutatorPriorityListFactory.cpp" />
+    <ClCompile Include="PriorityListValueMutator.cpp" />
+    <ClCompile Include="UnchangedValueMutator.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FizzBuzzGenerator.h" />
+    <ClInclude Include="Printer.h" />
+    <ClInclude Include="PrinterSpy.h" />
+    <ClInclude Include="FizzBuzzMutatorPriorityListFactory.h" />
+    <ClInclude Include="PriorityListValueMutator.h" />
+    <ClInclude Include="UnchangedValueMutator.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Tests">
+      <UniqueIdentifier>{f0fa15d5-cc70-48d4-87f6-aaf0ba2b7608}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
