@@ -9,5 +9,5 @@
 
 std::string BuzzMutator::Mutate(unsigned int i)
 {
-    return i == 5? "Buzz": "";
+    return (i % 5) != 0? "": "Buzz";
 }

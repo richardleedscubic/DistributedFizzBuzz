@@ -24,6 +24,11 @@ TEST_F(BuzzMutatorTests, FiveReturnsBuzz)
     EXPECT_THAT(mutator.Mutate(5), Eq("Buzz"));
 }
 
+TEST_F(BuzzMutatorTests, TenReturnsBuzz)
+{
+    EXPECT_THAT(mutator.Mutate(10), Eq("Buzz"));
+}
+
 TEST_F(BuzzMutatorTests, OneReturnsEmptyString)
 {
     EXPECT_THAT(mutator.Mutate(1), Eq(""));
@@ -35,5 +40,5 @@ TEST(BuzzTests, FiveOutputsBuzz) {
     FizzBuzzGenerator fizzBuzzGenerator(printer);
 
     fizzBuzzGenerator.Generate();
-    EXPECT_EQ("Buzz", printer.CallAtIndex(5));
+    EXPECT_EQ("Buzz", printer.CallAtIndex(4));
 }
