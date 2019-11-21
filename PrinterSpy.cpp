@@ -1,5 +1,6 @@
 #include "PrinterSpy.h"
 #include <exception>
+#include <stdexcept>
 
 void PrinterSpy::Print(std::string text)
 {
@@ -16,7 +17,7 @@ std::string PrinterSpy::CallAtIndex(unsigned int callIndex)
         errorText += std::to_string(printStatements.size());
         errorText += " calls were made";
 
-        throw std::exception(errorText.c_str());
+        throw std::runtime_error(errorText.c_str());
 	}
 	return (printStatements[callIndex]);
 }

@@ -37,3 +37,10 @@ Fizz
 Buzz
 ... etc up to 100
 
+## Building
+
+You'll need to copy in the `libGoogleTest` repo from a TR4 project.
+
+Then `mkdir build; cd build; cmake ..; make` (or load it in CLion)
+
+

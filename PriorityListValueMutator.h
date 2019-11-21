@@ -1,7 +1,9 @@
 #pragma once
 
-#include <vector>
 #include "ValueMutator.h"
+
+#include <memory>
+#include <vector>
 
 class PriorityListValueMutator : public ValueMutator
 {
