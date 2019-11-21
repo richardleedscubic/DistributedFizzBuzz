@@ -9,6 +9,9 @@ include(IntegrationTestTarget.cmake)
 add_subdirectory(libGoogleTest)
 
 set(SRCS
+    BuzzMutator.h
+    BuzzMutator.cpp
+    BuzzTests.cpp
     FizzBuzzGenerator.h
     FizzBuzzMutatorPriorityListFactory.h
     FizzBuzzValueMutator.h

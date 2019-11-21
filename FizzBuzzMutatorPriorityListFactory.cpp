@@ -4,6 +4,7 @@
 #include "FizzValueMutator.h"
 #include "UnchangedValueMutator.h"
 #include "PriorityListValueMutator.h"
+#include "BuzzMutator.h"
 
 std::shared_ptr<ValueMutator> FizzBuzzMutatorPriorityListFactory::Create()
 {
@@ -11,6 +12,7 @@ std::shared_ptr<ValueMutator> FizzBuzzMutatorPriorityListFactory::Create()
 
     priorityListValueMutator->Register(std::make_shared<FizzBuzzValueMutator>());
 	priorityListValueMutator->Register(std::make_shared<FizzValueMutator>("Fizz", 3));
+    priorityListValueMutator->Register(std::make_shared<BuzzMutator>());
     priorityListValueMutator->Register(std::make_shared<UnchangedValueMutator>());
 
     return priorityListValueMutator;
