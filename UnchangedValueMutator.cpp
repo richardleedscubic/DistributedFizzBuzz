@@ -2,6 +2,6 @@
 
 std::string UnchangedValueMutator::Mutate(unsigned int value)
 {
-    return (std::to_string(value + 1));
+    return (std::to_string(value));
 }
 

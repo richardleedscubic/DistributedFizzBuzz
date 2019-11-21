@@ -11,6 +11,7 @@ add_subdirectory(libGoogleTest)
 set(SRCS
     FizzBuzzGenerator.h
     FizzBuzzMutatorPriorityListFactory.h
+    FizzBuzzValueMutator.h
     Printer.h
     PrinterSpy.h
     PriorityListValueMutator.h
@@ -19,6 +20,8 @@ set(SRCS
     ValueMutatorFactory.h
     FizzBuzzGenerator.cpp
     FizzBuzzMutatorPriorityListFactory.cpp
+    FizzBuzzTests.cpp
+    FizzBuzzValueMutator.cpp
     FizzTests.cpp
     PrinterSpy.cpp
     PriorityListValueMutator.cpp
