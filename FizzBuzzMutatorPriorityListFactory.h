@@ -2,6 +2,8 @@
 
 #include "ValueMutator.h"
 
+#include <memory>
+
 class FizzBuzzMutatorPriorityListFactory
 {
 public:
